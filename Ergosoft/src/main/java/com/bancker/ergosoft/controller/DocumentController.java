@@ -36,14 +36,15 @@ public class DocumentController {
     private String ROOT;
 
     @RequestMapping(method = RequestMethod.GET)
-    public ResponseEntity getDocument(String patientEmail, String type, String name){
+    public ResponseEntity getDocument(String patientEmail, String type, String fileName){
         Patient patient=patientService.findByEmail(patientEmail);
         if(patient==null){
             log.error("Patient unknown !");
             return new ResponseEntity<>("Patient not found !", HttpStatus.BAD_REQUEST);
         }
-        String path=patient.getFirstName().concat("_"+patient.getName()+"/"+type+"/"+name);
-
+        String path=patient.getFirstName().concat("_"+patient.getName()+"/"+type+"/"+fileName);
+        File file=new File(path);
+        return new ResponseEntity(file, HttpStatus.OK);
     }
 
     /*public ResponseEntity getDocumentsName{
@@ -76,7 +77,7 @@ public class DocumentController {
                 return new ResponseEntity("Error : " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
             }
         } else {
-            return new ResponseEntity("You failed to upload " + name + " because the file was empty", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity("You failed to upload {" + name + "} because the file was empty", HttpStatus.BAD_REQUEST);
         }
     }
 
