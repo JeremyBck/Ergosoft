@@ -1,6 +1,8 @@
 package com.bancker.ergosoft.persistence.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.Entity;
@@ -12,6 +14,8 @@ import java.sql.Date;
 @Data
 @Entity
 @Transactional
+@NoArgsConstructor
+@AllArgsConstructor
 public class Timeslot {
 
     @Id

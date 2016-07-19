@@ -26,7 +26,7 @@ public class Patient {
     private String firstName;
 
     @Column(nullable = false)
-    private String email=firstName.concat("."+name+"email.com");
+    private String email;
 
     private String job;
 

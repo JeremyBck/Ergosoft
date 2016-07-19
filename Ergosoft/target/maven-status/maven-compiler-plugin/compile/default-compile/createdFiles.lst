@@ -1,4 +1,5 @@
 com\bancker\ergosoft\controller\UserController.class
+com\bancker\ergosoft\model\v0\PatientModel.class
 com\bancker\ergosoft\persistence\entity\Document.class
 com\bancker\ergosoft\persistence\service\UserService.class
 com\bancker\ergosoft\persistence\repository\TherapistRepository.class
@@ -13,13 +14,15 @@ com\bancker\ergosoft\persistence\service\TherapistService.class
 com\bancker\ergosoft\converters\UserConverter.class
 com\bancker\ergosoft\persistence\entity\Patient.class
 com\bancker\ergosoft\persistence\repository\PatientRepository.class
+com\bancker\ergosoft\model\v0\UserModel.class
 com\bancker\ergosoft\persistence\service\DocumentService.class
 com\bancker\ergosoft\business\ServiceTest.class
+com\bancker\ergosoft\controller\PatientController.class
 com\bancker\ergosoft\persistence\entity\User.class
 com\bancker\ergosoft\persistence\repository\UserRepository.class
 com\bancker\ergosoft\commands\UserToUpdateOrDelete.class
-com\bancker\ergosoft\model\UserModel.class
 com\bancker\ergosoft\persistence\repository\DocumentRepository.class
+com\bancker\ergosoft\converters\PatientConverter.class
 com\bancker\ergosoft\persistence\repository\TimeSlotRepository.class
 com\bancker\ergosoft\persistence\entity\Timeslot.class
 com\bancker\ergosoft\persistence\entity\Session.class

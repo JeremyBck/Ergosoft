@@ -1,6 +1,8 @@
 package com.bancker.ergosoft.persistence.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.Column;
@@ -10,6 +12,8 @@ import javax.persistence.Id;
 
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Session {
 
     @Id

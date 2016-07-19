@@ -1,6 +1,8 @@
 package com.bancker.ergosoft.persistence.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
@@ -8,6 +10,8 @@ import java.util.List;
 
 @Entity
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Therapist {
 
     @Id

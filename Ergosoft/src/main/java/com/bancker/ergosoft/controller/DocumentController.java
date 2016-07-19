@@ -34,7 +34,7 @@ public class DocumentController {
 
     @Value("${fileManagement.rootPath}")
     private String ROOT;
-
+    /*
     @RequestMapping(method = RequestMethod.GET)
     public ResponseEntity getDocument(String patientEmail, String type, String fileName){
         Patient patient=patientService.findByEmail(patientEmail);
@@ -45,10 +45,6 @@ public class DocumentController {
         String path=patient.getFirstName().concat("_"+patient.getName()+"/"+type+"/"+fileName);
         File file=new File(path);
         return new ResponseEntity(file, HttpStatus.OK);
-    }
-
-    /*public ResponseEntity getDocumentsName{
-
     }*/
 
     @RequestMapping(method = RequestMethod.POST)

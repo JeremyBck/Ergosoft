@@ -2,6 +2,7 @@ package com.bancker.ergosoft.persistence.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
@@ -9,6 +10,7 @@ import javax.persistence.*;
 @Entity
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class Document {
 
     @Id
