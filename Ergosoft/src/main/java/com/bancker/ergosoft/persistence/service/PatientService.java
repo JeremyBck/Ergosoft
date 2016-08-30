@@ -18,9 +18,9 @@ public class PatientService {
     PatientRepository patientRepository;
 
     public List<Patient> findByUser(final User user){
-        final Iterable<Patient> completePatientList=patientRepository.findAll();
+        final Iterable<Patient> completePatientList = patientRepository.findAll();
         List<Patient> patientList=new ArrayList<>();
-        for(Patient patient: completePatientList){
+        for(Patient patient: completePatientList) {
             if (patient.getUserList().contains(user)){
                 patientList.add(patient);
             }
